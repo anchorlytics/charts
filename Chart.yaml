@@ -1,0 +1,12 @@
+---
+apiVersion: v2
+name: nzbget
+version: 0.1.0
+appVersion: v24.5
+description: Usenet downloader
+keywords:
+- usenet
+home: https://github.com/seanho00/nzbget-helm
+sources:
+- https://github.com/seanho00/nzbget-helm
+icon: https://nzbget.com/img/favicon.ico
