@@ -1,9 +1,7 @@
-<!--- app-name: nzbget -->
+# Helm chart repository
 
-# nzbget
-
-Helm chart for Usenet downloader
+Miscellaneous helm charts managed by flux
 
 ```console
-helm install my-release https://github.com/seanho00/nzbget-helm
+helm repo add anchorlytics https://charts.anchorlytics.com/
 ```

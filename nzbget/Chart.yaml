@@ -6,7 +6,7 @@ appVersion: v24.5
 description: Usenet downloader
 keywords:
 - usenet
-home: https://github.com/seanho00/nzbget-helm
+home: https://github.com/anchorlytics/charts/charts/nzbget
 sources:
-- https://github.com/seanho00/nzbget-helm
+- https://github.com/anchorlytics/charts/charts/nzbget
 icon: https://nzbget.com/img/favicon.ico
