@@ -1,5 +1,9 @@
-# Default helm values
----
+# App config
+nzbget:
+  # keys: NZBGET_USER and NZBGET_PASS
+  secretRef: nzbget-pw
+  config:
+    MainDir: /downloads
 
 # https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
 replicaCount: 1
@@ -45,24 +49,17 @@ securityContext: {}
 # https://kubernetes.io/docs/concepts/services-networking/service/
 service:
   type: ClusterIP
-  port: 80
+  port: 6789
 
 # https://kubernetes.io/docs/concepts/services-networking/ingress/
 ingress:
   enabled: false
-  className: ""
+  className: 
+  host: nzbget.local
+  secretName:
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
-  hosts:
-    - host: chart-example.local
-      paths:
-        - path: /
-          pathType: ImplementationSpecific
-  tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
 
 resources: {}
   # limits:
@@ -91,11 +88,10 @@ autoscaling:
   # targetMemoryUtilizationPercentage: 80
 
 # Additional volumes on the output Deployment definition.
-volumes: []
-# - name: foo
-#   secret:
-#     secretName: mysecret
-#     optional: false
+volumes:
+- name: main
+  emptyDir:
+    sizeLimit: 10Gi
 
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts: []

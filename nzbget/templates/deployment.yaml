@@ -41,19 +41,29 @@ spec:
             - name: http
               containerPort: {{ .Values.service.port }}
               protocol: TCP
+          envFrom:
+          - secretRef:
+              name: "{{ .Values.nzbget.secretRef }}"
           livenessProbe:
             {{- toYaml .Values.livenessProbe | nindent 12 }}
           readinessProbe:
             {{- toYaml .Values.readinessProbe | nindent 12 }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-          {{- with .Values.volumeMounts }}
           volumeMounts:
-            {{- toYaml . | nindent 12 }}
+          - name: config
+            mountPath: /config
+          - name: main
+            mountPath: /downloads
+          {{- with .Values.volumeMounts }}
+            {{- toYaml . | nindent 10 }}
           {{- end }}
-      {{- with .Values.volumes }}
       volumes:
-        {{- toYaml . | nindent 8 }}
+      - name: config
+        configMap:
+          name: {{ include "nzbget.fullname" . }}-config
+      {{- with .Values.volumes }}
+        {{- toYaml . | nindent 6 }}
       {{- end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
