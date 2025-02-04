@@ -71,14 +71,15 @@ resources: {}
   #   memory: 128Mi
 
 # https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/
-livenessProbe:
-  httpGet:
-    path: /
-    port: http
-readinessProbe:
-  httpGet:
-    path: /
-    port: http
+# TODO: use saved credentials for AddUser
+livenessProbe: []
+#  httpGet:
+#    path: /
+#    port: http
+readinessProbe: []
+#  httpGet:
+#    path: /
+#    port: http
 
 # https://kubernetes.io/docs/concepts/workloads/autoscaling/
 autoscaling:
