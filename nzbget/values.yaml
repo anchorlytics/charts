@@ -4,6 +4,7 @@ nzbget:
   secretRef: nzbget-pw
   config:
     MainDir: /downloads
+    LogFile: "${MainDir}/nzbget.log"
 
 # https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
 replicaCount: 1

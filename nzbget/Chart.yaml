@@ -1,7 +1,8 @@
 ---
 apiVersion: v2
 name: nzbget
-version: 0.2.0
+version: 0.2.1
+# https://github.com/nzbgetcom/nzbget/releases
 appVersion: v24.5
 description: Usenet downloader
 keywords:
