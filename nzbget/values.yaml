@@ -72,11 +72,11 @@ resources: {}
 
 # https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/
 # TODO: use saved credentials for AddUser
-livenessProbe: []
+livenessProbe: {}
 #  httpGet:
 #    path: /
 #    port: http
-readinessProbe: []
+readinessProbe: {}
 #  httpGet:
 #    path: /
 #    port: http
