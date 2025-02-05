@@ -1,0 +1,14 @@
+---
+apiVersion: v2
+name: radarr
+version: 0.1.0
+# https://github.com/linuxserver/docker-radarr/releases
+appVersion: 5.18.4
+description: Movie collection manager
+keywords:
+- movie
+- media
+home: https://charts.anchorlytics.com/
+sources:
+- https://github.com/anchorlytics/charts/tree/main/radarr
+icon: https://radarr.video/img/logo.png
