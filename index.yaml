@@ -3,6 +3,21 @@ entries:
   nzbget:
   - apiVersion: v2
     appVersion: v24.5
+    created: "2025-02-05T22:11:08.713857877Z"
+    description: Usenet downloader
+    digest: b7671d480a18a4b704c4c1336008359d7f5df1db6e81499606ffce61d896f6ac
+    home: https://charts.anchorlytics.com/
+    icon: https://nzbget.com/img/favicon.ico
+    keywords:
+    - usenet
+    name: nzbget
+    sources:
+    - https://github.com/anchorlytics/charts/tree/main/nzbget
+    urls:
+    - https://github.com/anchorlytics/charts/releases/download/nzbget-0.3.0/nzbget-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: v24.5
     created: "2025-02-05T21:27:32.140100675Z"
     description: Usenet downloader
     digest: cd9f8c2183a7ad0ad7f3609437647462044da2531fbf5bcdb339f0d499167ea6
@@ -169,4 +184,4 @@ entries:
     urls:
     - https://github.com/anchorlytics/charts/releases/download/radarr-0.1.0/radarr-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-05T21:58:29.292710147Z"
+generated: "2025-02-05T22:11:08.713900306Z"
