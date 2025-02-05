@@ -54,7 +54,7 @@ spec:
           volumeMounts:
           - name: config
             mountPath: /config
-          - name: main
+          - name: appdata
             mountPath: /downloads
           {{- with .Values.volumeMounts }}
             {{- toYaml . | nindent 10 }}

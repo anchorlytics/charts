@@ -91,7 +91,7 @@ autoscaling:
 
 # Additional volumes on the output Deployment definition.
 volumes:
-- name: main
+- name: appdata
   emptyDir:
     sizeLimit: 10Gi
 
