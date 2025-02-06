@@ -169,6 +169,22 @@ entries:
   radarr:
   - apiVersion: v2
     appVersion: 5.18.4
+    created: "2025-02-06T01:11:47.967091496Z"
+    description: Movie collection manager
+    digest: fe13fe4b0ea25a8c398cd0706f7a49fe804fbb14f523207b33116a2feef75253
+    home: https://charts.anchorlytics.com/
+    icon: https://radarr.video/img/logo.png
+    keywords:
+    - movie
+    - media
+    name: radarr
+    sources:
+    - https://github.com/anchorlytics/charts/tree/main/radarr
+    urls:
+    - https://github.com/anchorlytics/charts/releases/download/radarr-0.1.4/radarr-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 5.18.4
     created: "2025-02-06T00:42:22.981812069Z"
     description: Movie collection manager
     digest: e6a1e9194b06b755dd4e47ddd83e2947bc9e4b9e9a6a616114191652ce6e7634
@@ -231,4 +247,4 @@ entries:
     urls:
     - https://github.com/anchorlytics/charts/releases/download/radarr-0.1.0/radarr-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-06T00:42:22.981852494Z"
+generated: "2025-02-06T01:11:47.967137603Z"
