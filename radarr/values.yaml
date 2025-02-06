@@ -29,7 +29,7 @@ podAnnotations: {}
 # https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 podLabels: {}
 
-podSecurityContext: {}
+podSecurityContext:
   fsGroup: 911
 
 securityContext: {}
