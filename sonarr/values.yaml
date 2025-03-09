@@ -44,7 +44,7 @@ securityContext: {}
 # https://kubernetes.io/docs/concepts/services-networking/service/
 service:
   type: ClusterIP
-  port: 7878
+  port: 8989
 
 # https://kubernetes.io/docs/concepts/services-networking/ingress/
 ingress:
