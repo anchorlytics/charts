@@ -324,4 +324,21 @@ entries:
     urls:
     - https://github.com/anchorlytics/charts/releases/download/radarr-0.1.0/radarr-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-08T04:00:07.936850356Z"
+  sonarr:
+  - apiVersion: v2
+    appVersion: 4.0.13
+    created: "2025-03-09T01:36:59.376078707Z"
+    description: TV series collection manager
+    digest: 96b5d594a50553ebc891446be7fadb551fc9975ccd6d3fddb6d1c1cd3ef0e04e
+    home: https://charts.anchorlytics.com/
+    icon: https://sonarr.video/img/logo.png
+    keywords:
+    - tv
+    - media
+    name: sonarr
+    sources:
+    - https://github.com/anchorlytics/charts/tree/main/sonarr
+    urls:
+    - https://github.com/anchorlytics/charts/releases/download/sonarr-0.1.1/sonarr-0.1.1.tgz
+    version: 0.1.1
+generated: "2025-03-09T01:36:59.376132928Z"
