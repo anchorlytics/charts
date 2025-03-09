@@ -3,7 +3,7 @@ apiVersion: v2
 name: sonarr
 version: 0.1.0
 # https://github.com/linuxserver/docker-sonarr/releases
-appVersion: 4.0.12
+appVersion: 4.0.13
 description: TV series collection manager
 keywords:
 - tv
