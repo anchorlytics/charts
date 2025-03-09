@@ -1,0 +1,14 @@
+---
+apiVersion: v2
+name: sonarr
+version: 0.1.0
+# https://github.com/linuxserver/docker-sonarr/releases
+appVersion: 4.0.13
+description: TV series collection manager
+keywords:
+- tv
+- media
+home: https://charts.anchorlytics.com/
+sources:
+- https://github.com/anchorlytics/charts/tree/main/sonarr
+icon: https://sonarr.video/img/logo.png
