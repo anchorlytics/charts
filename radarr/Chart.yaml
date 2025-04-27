@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
 name: radarr
-version: 0.1.7
+version: 0.1.8
 # https://github.com/linuxserver/docker-radarr/releases
-appVersion: 5.21.1
+appVersion: 5.22.4
 description: Movie collection manager
 keywords:
 - movie
